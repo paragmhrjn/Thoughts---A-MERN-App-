@@ -20,9 +20,10 @@ app.use(rateLimiterMD)
 // prefixing api routing endpoints
 app.use("/api/notes", noteRoutes)
 
-connectDB()
+connectDB().then(() => {
 
+    app.listen(PORT, () => {
+        console.log("Server started on PORT:", PORT);
+    });
+})
 
-app.listen(PORT, () => {
-    console.log("Server started on PORT:", PORT);
-});

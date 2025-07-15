@@ -2,7 +2,7 @@ import rateLimiter from "../config/ratelimit.js";
 
 const rateLimiterMD = async (req, res, next) => {
     try {
-        const rateLimiterRes = await rateLimiter.consume(req.ip);
+       await rateLimiter.consume(req.ip);
         next();
     } catch (error) {
         console.log("Rate Limit Error", error);
