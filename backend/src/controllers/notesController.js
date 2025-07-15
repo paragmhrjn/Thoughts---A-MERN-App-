@@ -12,7 +12,7 @@ export const getAllNotes = async (_, res) => {
     }
 };
 
-// fetch note fy id
+// fetch note by id
 export const getNoteById = async (req, res) => {
     try {
         const note = await Note.findById(req.params.id)
