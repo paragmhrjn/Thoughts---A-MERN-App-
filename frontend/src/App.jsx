@@ -6,8 +6,8 @@ import NoteDetailPage from './pages/NoteDetailPage'
 import {toast} from 'react-hot-toast'
 const App = () => {
   return (
-    <div data-theme="business">
-      <button onClick={() => toast.success("Welcome! It is connected Successfully")} className="btn btn-primary">Click Me</button>
+    <div data-theme="luxury">
+      
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/create' element={<CreatePage />}></Route>
