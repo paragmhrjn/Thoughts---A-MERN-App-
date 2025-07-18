@@ -9,7 +9,7 @@ const NoteDetailPage = () => {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
   // hooks to get value using id
   const { id } = useParams()
@@ -67,6 +67,7 @@ const NoteDetailPage = () => {
     try {
       await api.put(`/notes/${id}`, note)
       toast.success("Note updated successfully")
+      navigate("/")
     } catch (error) {
       console.log("Error saving the note:", error)
       toast.error("Failed to save note")
