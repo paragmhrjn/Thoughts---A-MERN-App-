@@ -1,0 +1,13 @@
+{
+  "name": "mern-thoughts",
+  "version": "1.0.0",
+  "description": "**Thoughts** is a clean, fast, and intuitive note-taking app built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to create, edit, delete, and organize their thoughts quickly and efficiently, with a minimal, distraction-free interface.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

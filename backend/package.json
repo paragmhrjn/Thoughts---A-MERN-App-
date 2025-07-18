@@ -17,6 +17,7 @@
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.1",
     "ioredis": "^5.6.1",
+    "mern-thoughts": "file:..",
     "mongoose": "^8.16.2",
     "rate-limiter-flexible": "^7.1.1"
   },

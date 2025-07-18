@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
     "lucide-react": "^0.525.0",
+    "mern-thoughts": "file:..",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.5.2",
